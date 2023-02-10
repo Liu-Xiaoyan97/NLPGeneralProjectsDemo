@@ -1,0 +1,12 @@
+num_embeddings: 100000
+embedding_dim: 128
+max_seq_len: 10
+in_channels: 1
+out_channels: 1
+kernels: [{'kernel_size': 7, "padding": 3, "stride": 1},
+             {'kernel_size': 5, 'padding': 2, 'stride': 1},
+             {'kernel_size': 3, 'padding': 1, 'stride': 1},
+             {'kernel_size': 7, 'padding': 3, 'stride': 1}]
+num_classes: 4
+lr: 1e-4
+weight_decay: 1e-3

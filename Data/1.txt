@@ -1,0 +1,3 @@
+Text	Label
+"Hello word"	1
+"Hello kitty"	2
