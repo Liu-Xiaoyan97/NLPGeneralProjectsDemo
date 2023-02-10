@@ -10,12 +10,12 @@ Author @ Xiaoyan Liu
 
 ## 如何查看训练日志
 将下列命令输入到cmd中执行，--logdir替换为自己的目录就行。以事件文件events.out.tfevents.xxx.lxy为例：  
-```Tensorboard --logdir=logs/TextCNN/version_0```
+```Tensorboard --logdir=PytorchStyle/logs/TextCNN/version_0```
 ## 如何运行
 MODE: train/test/predict三者中任一    
 CKPT_PATH: 模型存放位置，用来加载训练好的模型  
 DATASET_PATH: 数据存放位置，用来加载数据  
 PREDICT_TEXT: 待预测文本  
-```python main.py -t MODE -p CKPT_PATH -d DATASET_PATH -s PREDICT_TEXT```  
+```python PytorchStyle/main.py -t MODE -p CKPT_PATH -d DATASET_PATH -s PREDICT_TEXT```  
 example:  
-```python main.py -t test -p logs/TextCN/version_0/model.pth, -d Data/1.json -s "hello world"```
+```python PytorchStyle/main.py -t test -p PytorchStyle/logs/TextCN/version_0/model.pth, -d PytorchStyle/Data/1.json -s "hello world"```

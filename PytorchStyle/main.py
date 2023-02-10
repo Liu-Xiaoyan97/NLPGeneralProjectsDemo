@@ -13,7 +13,7 @@ def parse_args():
 
 
 if __name__ == "__main__":
-    configs = OmegaConf.load("./config/textcnn.yml")
+    configs = OmegaConf.load("config/textcnn.yml")
     args = parse_args()
     print(configs)
     # num_embeddings=100000
