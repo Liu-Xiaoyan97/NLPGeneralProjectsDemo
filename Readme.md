@@ -19,3 +19,6 @@ PREDICT_TEXT: 待预测文本
 ```python PytorchStyle/main.py -t MODE -p CKPT_PATH -d DATASET_PATH -s PREDICT_TEXT```  
 example:  
 ```python PytorchStyle/main.py -t test -p PytorchStyle/logs/TextCN/version_0/model.pth, -d PytorchStyle/Data/1.json -s "hello world"```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
