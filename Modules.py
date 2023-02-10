@@ -70,7 +70,7 @@ class TextCNN(nn.Module):
         trainloader = DataLoader(train_set, batch_size=batch_size, shuffle=shuffle)
         train_metrics_epoch = torch.tensor(np.NAN)
         for i in range(epoch):
-            with trange(trainloader.__len__()) as t:
+            with trange(trainloader.__len__()+1) as t:
                 for step, features in enumerate(trainloader):
                     logits = self.forward(features)
                     loss = self.loss(logits, features["labels"])
