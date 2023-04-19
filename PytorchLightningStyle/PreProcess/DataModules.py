@@ -51,6 +51,7 @@ class DataModule(LightningDataModule):
         self.eval_set = None
         self.test_set = None
 
+    """如果地址为空则从huggingface下载数据集，不然直接从本地读取数据"""
     def get_dataset_cls(self, mode: str = "train"):
         if self.filepath is None:
             return HuggingFaceDatasetImpl
@@ -127,6 +128,7 @@ class NLPModules(Dataset):
 
 
 class HuggingFaceDatasetImpl(NLPModules, ABC):
+
     def __init__(self, filename: str, mode: str, label_map: list, subset: str = None,
                  feature1: str = "Text", feature2: str = None, label: str = "label",
                  max_length: int = 512,  *args, **kwargs):

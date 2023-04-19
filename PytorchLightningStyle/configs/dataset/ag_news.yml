@@ -1,0 +1,11 @@
+filename: ag_news
+subset:
+filepath:
+max_length: 64
+label_map: [0, 1, 2, 3]
+num_classes: 4
+batch_size: 10
+num_workers: 4
+feature1: "text"
+feature2:
+label: "label"
